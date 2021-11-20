@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>Cruis</title>
+<!-- 
+
+Eatery Cafe Template 
+
+http://www.templatemo.com/tm-515-eatery
+
+-->
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+     
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/animate.css">
+     <link rel="stylesheet" href="css/owl.carousel.css">
+     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+     <link rel="stylesheet" href="css/magnific-popup.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="css/templatemo-style.css">
+
+</head>
+
+<style>
+     hr.style-eight {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+hr.style-eight:after {
+    content: "&";
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+}
+.section-content h2{
+font-size: 23px;
+}
+.section-content p{
+font-size: 17px;
+}
+.b{
+     margin-left: 100px;
+}
+.text_about{
+     font-size: 17px;
+     color:black;
+}
+.pppp{
+     color:rgb(59, 59, 59)!important
+}
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+</style>
+<body>
+
+
+
+<!-- MODAL-->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <div class="modal-dialog" role="document">
+       <div class="modal-content">
+         <div class="modal-header">
+              <div class="row">
+              <div class="col-md-12" style="font-family: Montserrat;font-style: normal; font-weight: 500;  font-size: 18px;">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+           <h3 style="text-align: center;">Обратная связь</h3>
+          </div>
+               
+     </div>
+           
+         </div>
+         <div class="modal-body">
+   
+         <form action="add_client.php" method="POST">
+       <div class="form-group">
+           <label for="name">Ваше имя</label>
+           <input type="text" class="form-control" id="name" name="name"
+                  placeholder="Иван Иванов" style="height: 4.7rem; border-color: red; "  required>
+       </div>
+   
+       <div class="form-group">
+           <label for="phone">Номер телефона</label>
+           <input type="tel" class="form-control" id="phone" name="phone"
+                  placeholder="+7 (495) 755 69 83" style="height: 4.7rem; border-color: red; " required>
+       </div>
+   
+       <div style="color:rgb(128, 119, 119);font-size: 13px;">
+           Нажимая на кнопку, я согласен(а) с условиями
+           <br/>
+           <a href="#" style="text-decoration: none; color:rgb(61, 59, 59); font-size: 10px;">
+               Пользовательского соглашения, Клиентского соглашения и Terms and Conditions
+           </a>
+       </div>
+       <br/>
+       <button type="submit" class="btn btn-lg section-btn btn-block" style="height: 4.7rem; font-size: 18px;">Оставить заявку</button>
+   </form>
+   
+         </div>
+       </div>
+     </div>
+   </div>
+   <!-- MODAL-->
+
+   
+     <!-- MENU -->
+     <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+          <div class="container">
+
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+
+                    <!-- lOGO TEXT HERE -->
+                    <a href="index.html" class="navbar-brand">SMART <span>.</span> CRUIS</a>
+               </div>
+
+               <!-- MENU LINKS -->
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-nav-first">
+                         <li><a href="#home" class="smoothScroll">Главная</a></li>
+                         <li><a href="#about" class="smoothScroll">О нас</a></li>
+                         <li><a href="#team" class="smoothScroll">6 причин</a></li>
+                         <li><a href="#menu" class="smoothScroll">Отзывы</a></li>
+                         <li><a href="#menu1" class="smoothScroll">Направления</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                         <li><a href="tel:88002018135"><i class="fa fa-phone"> </i> +7 909 707 707</a></li>
+                         <a href="#" data-toggle="modal" data-target="#exampleModal"  class="section-btn">Узнать подробнее</a>
+                    </ul>
+               </div>
+
+          </div>
+     </section>
+
+
+     <!-- HOME -->
+     <section id="home" class="slider" data-stellar-background-ratio="0.5">
+          <div class="row">
+
+                    <div class="owl-carousel owl-theme">
+                         <div class="item item-first">
+                              <div class="caption">
+                                   <div class="container" style="margin-bottom: 120px;">
+                                        <div class="col-md-10 col-sm-12" >
+                                             <h1>Вложи в круизный бизнес под ключ</h1>
+                                             <h3>ОТКРОЕМ ВАМ ПРИБЫЛЬНЫЙ БИЗНЕС ПОД КЛЮЧ,
+                                                  ВСЕГО ЗА 14 ДНЕЙ СО 100% ГАРАНТИЕЙ ВОЗВРАТА
+                                                  В СЛУЧАЕ НЕ ВЫПОЛНЕНИЯ УСЛОВИЙ</h3></br></br>   
+                                             <a href="#" data-toggle="modal" data-target="#exampleModal" class="section-btn btn btn-default smoothScroll">Узнать подробнее бесплатно</a>
+
+                                        </div>
+                                        
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="item item-second">
+                              <div class="caption" >
+                                   <div class="container" style="margin-bottom: 120px;">
+                                        <div class="col-md-10 col-sm-12">
+                                             <h1>Вложи в круизный бизнес под ключ</h1>
+                                             <h3>ОТКРОЕМ ВАМ ПРИБЫЛЬНЫЙ БИЗНЕС ПОД КЛЮЧ,
+                                                  ВСЕГО ЗА 14 ДНЕЙ СО 100% ГАРАНТИЕЙ ВОЗВРАТА
+                                                  В СЛУЧАЕ НЕ ВЫПОЛНЕНИЯ УСЛОВИЙ</h3></br></br>
+                                             <a href="#" data-toggle="modal" data-target="#exampleModal" class="section-btn btn btn-default smoothScroll">Узнать подробнее бесплатно</a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+
+                         <div class="item item-third">
+                              <div class="caption">
+                                   <div class="container" style="margin-bottom: 120px;">
+                                        <div class="col-md-10 col-sm-12">
+                                             <h1>Вложи в круизный бизнес под ключ</h1>
+                                             <h3>ОТКРОЕМ ВАМ ПРИБЫЛЬНЫЙ БИЗНЕС ПОД КЛЮЧ,
+                                                  ВСЕГО ЗА 14 ДНЕЙ СО 100% ГАРАНТИЕЙ ВОЗВРАТА
+                                                  В СЛУЧАЕ НЕ ВЫПОЛНЕНИЯ УСЛОВИЙ</h3></br></br>
+                                             <a href="#" data-toggle="modal" data-target="#exampleModal" class="section-btn btn btn-default smoothScroll">Узнать подробнее бесплатно</a>
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+          </div>
+     </section>
+
+
+     <div class=" wow fadeInRight" data-wow-delay="0.2s">
+<hr class="style-eight">
+
+          <div class="container" style=" text-align: center; margin-top:0rem; ">
+               <h2 style=" text-align: center; margin-top:-0.5rem; ">Наши результаты</h2>
+   
+              <div class="row">
+                  <div class="col-sm-3" >
+                      <div class="card-body">
+                          <h1 class="card-title">16</h1>
+                          <p class="card-text">Открыто круизных линий</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3" >
+                      <div class="card-body">
+                          <h1 class="card-title">5000+</h1>
+                          <p class="card-text">Более круизов в наличии</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3" >
+                      <div class="card-body">
+                          <h1 class="card-title">187</h1>
+                          <p class="card-text">Стран с которыми работаем</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-3" >
+                      <div class="card-body">
+                          <h1 class="card-title">5</h1>
+                          <p class="card-text">Более лет на рынке</p>
+                        </div>
+                    </div>
+              </div>
+        </div>
+     <hr class="style-eight">
+</div>
+
+
+     <!-- ABOUT -->
+     <section id="about" data-stellar-background-ratio="0.5" >
+          <div class="container" >
+               <div class="row" >
+
+                    <div class="col-md-6 col-sm-12">
+                         <div class="about-info">
+                              <div style="border-width: 0 0 0 3px;/*толщина*/ border-style: dotted; padding-left: 30px;/*отступ слева*/">
+                              <div class="section-title wow fadeInUp" data-wow-delay="0.2s">
+                                   <h4>знакомство с нами</h4>
+                                   <h2 style="margin-bottom: -2rem;">Что мы делаем?</h2>
+                              </div>
+
+                              <div class="wow fadeInUp"   data-wow-delay="0.4s">
+                                   <p style="color:black!important">1. Развиваем одно из самых надежных и перспективных направлений.</p>
+                                   <p style="color:black!important">2. Работаем полностью в автоматическом режиме через интернет.</p>
+                                   <p style="color:black!important"> 3. Более 5 лет на круизном рынке!</p>
+                                   <p style="color:black!important">4. Предоставляем вам  "Бизнес под ключ"</p>
+                                   <p style="color:black!important">5. Работаем прозрачно и официально по договору!</p>
+                              </div>
+                         </div>
+                    </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12">
+                         <div class="wow fadeInUp about-image" data-wow-delay="0.6s">
+                              <img src="https://www.freepngimg.com/thumb/cruise_ship/1-2-cruise-transparent.png" style="margin-top:-20px" class="img-responsive" alt="">
+                         </div>
+                    </div>
+                    
+               </div>
+          </div>
+     </section>
+
+    
+     <!-- TEAM -->
+     <section  data-stellar-background-ratio="0.5"  style="background-color: #EDEEF0; width: 103%;">
+          <div class="container">
+               <div class="row" style="margin-top:-3rem;">
+               
+                    <div class="col-md-5 col-sm-6">
+                         <div class="team-thumb wow fadeInUp" style="height: 500px;width: 370px; margin-top:3rem"data-wow-delay="0.2s">
+                              <img src="images/team-image1.jpg" class="img-responsive" alt="">
+                                   <div class="team-hover">
+                                        <div class="team-item">
+                                             <h4>Шаталов Влас Николаевич - эксперт по круизному бизнесу</h4> 
+                                        </div>
+                                   </div>
+                         </div>
+                         
+                    </div>
+
+                    
+
+                    <div class="col-md-7 col-sm-6">
+                    
+                         <div class="wow fadeInUp" data-wow-delay="0.2s" style="text-align: left;">
+                              <div style="border-width: 0 3px 0 0 ;/*толщина*/ border-style: dotted; padding-left: 30px;/*отступ слева*/">
+                              <h2 style=" ">О нас</h2>
+
+                                   <p class="text_about">Здравствуйте меня зовут, <b style="color:rgb(77, 77, 77)">Шаталов Влас Николаевич</b> .</p>
+                                   <p class="text_about">Я развиваю уже действующий бизнес .</p></br>     
+                                   <h4>Почему бизнес в круизном клубе?</h4>
+                                   <p class="text_about">1. Работа производиться по всему миру без привязки к определенному месту</p>
+                                   <p class="text_about">2. Все прозрачно с передачей данного бизнеса по наследству.</p>
+                                   </br> 
+                                   <h4>Почему все легко и быстро развиваеться ?</h4>
+                                   <p class="text_about">Согласно пункту 8.2 в заключенном договоре в течение 14 дней будет произведен полный возврат ваших денежных средств в случае если вас что то не устроит.
+                                   </br> Что гарантирует на 100% безрисковость вступления в круизный клуб.</p>
+                              </br>
+                              <button type="button" data-toggle="modal" data-target="#exampleModal" 
+                              class="btn section-btn btn-large" style="width: 300px; height: 40px; margin-top:-5px;">Узнать подробнее сейчас</button></div>
+                         </div>
+                    </div>
+                    
+               </div>
+          </div>
+          
+ 
+
+     
+     <hr style="border: 0;margin-bottom:2rem; height: 1px;background: #333;background-image: linear-gradient(to right, #ccc, #333, #ccc); width: 70%; margin-top: 6rem;">
+     <div style="background-color: #EDEEF0;">
+          <div class="container" >
+              
+               <div class="row" style=" margin-top: 4rem; margin-bottom: 4rem; ">
+                    <div class="col-md-5 wow fadeInUp" data-wow-delay="0.6s" style="text-align: center;">
+                         <div class="video-container" >
+                              <video autoplay loop muted id="video-bg" style="width: 200px;">
+                              <source src="images/1.webm" type="video/mp4" >    
+                              </video>
+                         </div>
+                    </div>
+                    <div class="col-md-6 wow fadeInRight" data-wow-delay="0.3s" style="font-size:22px;">
+                         <h3>hello world</h3>
+                         Приветсвую,меня зовут Юлия Халеминец . </br>
+                         Я предприниматель с 10 летним стажем. </br>
+                         Пандемия мне показала,что пришло время онлайн заработка!Поэтому я здесь, в надёжном и перспективном проекте,который развиваю онлайн!</br>
+                         Смотри о нем подробнее на видео.</br> </div>
+               </div>
+          </div>
+          </div>
+          
+     
+
+     </section>
+     <!-- About -->
+				<div id="team"  style="background-color: white;">
+                    </br></br>
+					<!-- Section Content -->
+					<div class="section-content">
+                              <div class="wow fadeInUp" data-wow-delay="0.2s">
+                         <h1 class="text-center">6 причин</h1>
+                         <h3 class="text-center" style="margin-top: -1rem">начать зарабатывать и путешестовать</h3>     <hr class="style-eight"></br></br>
+                    </div>
+
+                    <div class="wow fadeInRight" data-wow-delay="0.2s">
+                         <div class="container" >
+						<!-- Row -->
+						<div class="row">
+
+						
+							<!-- Column -->
+							<div class="service col-md-4 col-xs-12 t-left" data-uk-scrollspy="{cls:'uk-animation-fade', delay:20}">
+                                        
+                                        
+								<!-- Service -->
+								
+									<!-- Icon -->
+									<i class="icon ion-social-wordpress-outline"></i>
+									
+									<!-- Title -->
+									<h2 class="f-semi-expanded ultrabold uppercase">1. Для чего наш клуб</h2>
+									
+									<!-- Service Desp -->
+									<p class="gray2 f-normal normal pppp">
+                                                  Наш Клуб был создан для того, чтобы сделать круизы “Самой Большой Ценностью в Индустрии Туризма” – максимально доступной, выгодной и даже прибыльной для миллионов людей во всём мире</p>
+
+								<!-- End Service -->
+								
+							</div>
+							<!-- End Column -->
+
+							
+							<!-- Column -->
+							<div class="service col-md-4 col-xs-12 t-left" data-uk-scrollspy="{cls:'uk-animation-fade', delay:40}">
+							
+								<!-- Service -->
+
+									<!-- Icon -->
+									<i class="icon ion-social-android-outline"></i>
+									
+									<!-- Title -->
+									<h2 class="f-semi-expanded ultrabold uppercase" >2. Надежность компании </h2>
+									
+									<!-- Service Desp -->
+									<p class="gray2 f-normal normal pppp">Компания 5 лет на рынке и уже осуществляет значительный вклад в деятельность благотворительных организаций “The Make-a-Wish®” и проекта “4Ocean”. </p>
+
+								<!-- End Service -->
+								
+							</div>
+							<!-- End Column -->
+
+							
+							<!-- Column -->
+							<div class="service col-md-4 col-xs-12 t-left" data-uk-scrollspy="{cls:'uk-animation-fade', delay:60}">
+                                        
+                                        <!-- Service -->
+								
+									<!-- Title -->
+									<h2 class="f-semi-expanded ultrabold uppercase">3. Бесплатные путешествия</h2>
+									
+									<!-- Service Desp -->
+									<p class="gray2 f-normal normal pppp">За определенно проделанную работу компания дарит вам путешествия по всему миру, абсолютно бесплатно!
+                                             </p>
+
+                                        <!-- End Service -->
+                                        
+								
+								
+							</div>
+							<!-- End Column -->
+
+						</div>
+                              <!-- End Row -->
+                         </div>
+						
+						
+						
+						
+                              <!-- Row -->
+                              <div class="container" >
+						<div class="row">
+
+
+                                   <!-- Column -->
+							<div class="service no-padding-bottom col-md-4 col-xs-12 t-left" data-uk-scrollspy="{cls:'uk-animation-fade', delay:60}">
+							
+								<!-- Icon -->
+								<i class="icon ion-social-javascript-outline"></i>
+								
+								<!-- Title -->
+								<h2 class="f-semi-expanded ultrabold uppercase">4. Экономия от клуба</h2>
+								
+								<!-- Service Desp -->
+								<p class="gray2 f-normal normal pppp">Мы сохраняем сотни и даже миллионы долларов, которые могли бы быть потрачены на рекламу круизной индустрии и выплачиваем эти деньги непосредственно самым сильным маркетологам на планете – ВАМ!</p>
+							
+							</div>
+                                   <!-- End Column -->
+                                   
+                                   
+							<!-- Column -->
+							<div class="service no-padding-bottom col-md-4 col-xs-12 t-left" data-uk-scrollspy="{cls:'uk-animation-fade', delay:80}">
+							
+								<!-- Icon -->
+								<i class="icon ion-social-apple-outline"></i>
+								
+								<!-- Title -->
+								<h2 class="f-semi-expanded ultrabold uppercase" >5. Перспектива развития </h2>
+								
+								<!-- Service Desp -->
+								<p class=" f-normal normal pppp">Неограниченная возможность развития бизнеса (рынок круизов занят всего на 2%), происходит на международном уровне что открывает возможность работы из любой точки мира!</p>
+
+							</div>
+							<!-- End Column -->
+
+							
+							
+
+							
+							<!-- Column -->
+							<div class="service no-padding-bottom no-padding-bottom-last col-md-4 col-xs-12 t-left" data-uk-scrollspy="{cls:'uk-animation-fade', delay:60}">
+							
+								<!-- Icon -->
+								<i class="icon ion-social-windows-outline"></i>
+								
+								<!-- Title -->
+								<h2 class="f-semi-expanded ultrabold uppercase">6. Почему мы?</h2>
+								
+								<!-- Service Desp -->
+								<p class="gray2 f-normal normal pppp">У нас превосходно проработанное предложение, которое пользуется огромным спросом: по последним данным более 32 миллионов человек отправятся в круизное путешествие в этом году.</p>
+
+							</div>
+							<!-- End Column -->
+
+							
+						</div>
+						<!-- End Row -->
+                         </div>
+                    </br></br>
+               </div>
+          </br></br>
+					</div>
+					<!-- End Section Content -->
+					
+				</div>
+				<!-- End About -->
+
+     <!-- MENU-->
+
+
+
+
+
+
+
+
+<section id="menu" style="margin-top:-7rem;">
+<div class="container" style="text-align: center;">
+     <div class="col-md-12 col-sm-12" style="margin-bottom: -5rem;">
+          <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
+               <h2 style="margin-bottom: -2rem;">Отзывы от людей</h2>
+               <h3>которые уже с нами путешествуют и зарабатывают</h3>
+               <hr style="
+                    border: 0;
+                    height: 1px;
+                    background: #333;
+                    background-image: linear-gradient(to right, #ccc, #333, #ccc); width: 65%;
+                ">
+          </div>
+     </div>
+     <div class="row">
+          
+          
+          <div class="col-sm-3" style="margin-top: 3rem;" >
+               <iframe width="370" height="280" src="https://www.youtube.com/embed/J14HAzDktHI" frameborder="0" 
+               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="col-sm-1"></div>
+          <div class="col-sm-3" style="margin-top: 3rem;">
+               <iframe width="370" height="280" src="https://www.youtube.com/embed/WiV4uA1psr0" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="col-sm-1"></div>
+          <div class="col-sm-3" style="margin-top: 3rem;">
+               <iframe width="370" height="280" src="https://www.youtube.com/embed/ZAu17x5xH_Q" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          
+     </div>
+</div>
+
+</section>
+
+
+
+
+     <section id="menu1" style="text-align: center;width: 102%;">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-12 col-sm-12">
+                         <div class="section-title wow fadeInUp" data-wow-delay="0.1s">
+                              <h2>Наши направления</h2>
+                              <h4>Кругосветное &amp; В странах шенгена</h4>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <!-- MENU THUMB -->
+                         <div class="menu-thumb">
+                              <a href="#" data-toggle="modal" data-target="#exampleModal">
+                                   <img src="https://images.wallpaperscraft.ru/image/ozero_gory_les_hvoynyy_vershiny_zasnezhennye_oblaka_svezhest_chistota_vodnaya_glad_poverhnost_62328_1920x1080.jpg" class="img-responsive" alt="">
+
+                                   <div class="menu-info">
+                                        <div class="menu-item">
+                                             <h3>Аляска</h3>
+                                             <p>Узнать подробнее</p>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <!-- MENU THUMB -->
+                         <div class="menu-thumb">
+                              <a href="#" data-toggle="modal" data-target="#exampleModal">
+                                   <img src="images/6.jpg" class="img-responsive" alt="">
+
+                                   <div class="menu-info">
+                                        <div class="menu-item">
+                                             <h3>Азия</h3>
+                                             <p>Узнать подробнее</p>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <!-- MENU THUMB -->
+                         <div class="menu-thumb">
+                              <a href="#" data-toggle="modal" data-target="#exampleModal">
+                                   <img src="https://img1.akspic.com/image/103983-birds_eye_view-day-hotel-sydney-sea-1920x1080.jpg" class="img-responsive" alt="">
+
+                                   <div class="menu-info">
+                                        <div class="menu-item">
+                                             <h3>Австралия / Новая Зенландия</h3>
+                                             <p>Узнать подробнее</p>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+               </div>
+
+
+
+               <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                         <!-- MENU THUMB -->
+
+                         <div class="menu-thumb">
+                              <a href="#" data-toggle="modal" data-target="#exampleModal">
+                                   <img src="https://i.artfile.me/wallpaper/02-10-2018/1920x1080/toronto--kanada-goroda-toronto--kanada-u-1393588.jpg" class="img-responsive" alt="">
+
+                                   <div class="menu-info">
+                                        <div class="menu-item">
+                                             <h3>Канада / Новая Англия</h3>
+                                             <p>Узнать подробнее</p>
+                                        </div>
+                                   </div>
+                              </a>
+                              
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <!-- MENU THUMB -->
+                         <div class="menu-thumb">
+                              <a href="#" data-toggle="modal" data-target="#exampleModal">
+                                   <img src="https://images.wallpaperscraft.ru/image/tropiki_more_palmy_basseyn_84859_2560x1440.jpg" class="img-responsive" alt="">
+
+                                   <div class="menu-info">
+                                        <div class="menu-item">
+                                             <h3>Карибские острова</h3>
+                                             <p>Узнать подробнее</p>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <!-- MENU THUMB -->
+                         <div class="menu-thumb">
+                              <a href="#" data-toggle="modal" data-target="#exampleModal">
+                                   <img src="https://i.content4travel.com/cms/img/u/desktop/se/xhrhvar_0.jpg?version=191205-09?version=171207-10" class="img-responsive" alt="">
+
+                                   <div class="menu-info">
+                                        <div class="menu-item">
+                                             <h3>Средиземноморье</h3>
+                                             <p>Узнать подробнее</p>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+
+
+               </div>
+          </div>
+
+<div class="container">
+     <div class="row">
+          <div class="col-md-4 col-sm-6">
+               <!-- MENU THUMB -->
+               <div class="menu-thumb">
+                    <a href="#" data-toggle="modal" data-target="#exampleModal">
+                         <img src="https://yandex.ru/images/_crpd/NA5E2z199/5bde2d0jE/07Cs0Rh1i1pYV8TjAZYzrF_-05yGcfBPxUR0xqWmaRgK0g16aP-ZLHlyImCZwrp3CX9ANdmmDN-idXKz2OI0lM7wqKhQJbYvfBacxnDq30S6QmN0a4Vxr0XtZY_JpxgdN9ZM28XmlaTMv8doLC-DVqziABGdI-FKS2Ezy4SKtRwT1TnZcL2uvky2JI-d5uOk6mp_LAsZEWf15ZFXIVdsyIe6OA909t2ceGNfjEDTp6YgEnQhNatlQt8xyyMAesEsqy11aahxsg6supTHqbIb8OYKfzTv5UE71eVZE2l7CCzbXtR_LNLh4PCTC9iQB7uq_HLABVG3QRJHvcvP7Aah9G-VcXUQFQrW2EpwX0mKDwT2isNUiwUJD7lxLWNV_-hAzzbExzQ60fikL-uoJDdrKgSieFGx_3mKJ6lLIzgWafwnmVE9qKlmetSWwGPVvvP4Zp4_gH9FgT-5dVWvXf_QMEf6DBt48ikExA8LKGQv37JoBpyJnRttfvuZe2NktlUoz4nNMQj1wqqoHuxLRc4rXC7Cf8Db-REnBcVZNxmbbPgDJhRD9C6ZZDCb12CYE38mwFY0DfEjvX5b5cd7UN59MOsteaEIEWZSIELwSzVmjyimWk9A893Fn9nRVVepg1woMy4w72w2ZbQ0e7MoNN8jtnD6cAntD7UOe3F3mxzeXZCvtUl1IJEGarA-qEu5Aq-o6mqvrJMpvQv9wV3rFWco2NMy1PNg4kGoFKMrEKinW1oYnrjhNaPRBjdlt_P4ds2of7VhAWgVGuK0UqjX1XaPZI6WM1TD4X0DAWUZt7lrrOwnmhyXrIZdrMSfN3RUD4-6xO5gHRU_TSrf4XfncHJFTC9ZzUkEOapKpNZkTz1GE5QKElOkk2X5g4FdKSNhV7xotxLMKwBaoRxE8294vKMvjuwOIAk1472Cezlvy_DKSajbGSG9dMkG3hRqvMc1ti9cFlpjkO8F9S_dTV07oZcE" class="img-responsive" alt="">
+
+                         <div class="menu-info">
+                              <div class="menu-item">
+                                   <h3>Южная Америка</h3>
+                                   <p>Узнать подробнее</p>
+                              </div>
+                         </div>
+                    </a>
+               </div>
+          </div>
+                    
+
+
+                    <div class="col-md-4 col-sm-6">
+                         <!-- MENU THUMB -->
+                         <div class="menu-thumb">
+                              <a href="#" data-toggle="modal" data-target="#exampleModal">
+                                   <img src="https://vsthemes.ru/uploads/posts/2019-02/1582031410_santorini-greece_vsthemes_ru-34.jpg"    class="img-responsive" alt="">
+                                   <div class="menu-info">
+                                        <div class="menu-item">
+                                             <h3>Греческие острова</h3>
+                                             <p>Узнать подробнее</p>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+
+                   
+                    <div class="col-md-4 col-sm-6">
+                         <!-- MENU THUMB -->
+                         <div class="menu-thumb">
+                              <a href="#" data-toggle="modal" data-target="#exampleModal">
+                                   <img src="https://vsthemes.ru/uploads/posts/2019-02/1582031410_santorini-greece_vsthemes_ru-6.jpg" class="img-responsive" alt="">
+
+                                   <div class="menu-info">
+                                        <div class="menu-item">
+                                             <h3>Гавайи</h3>
+                                             <p>Узнать подробнее</p>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+
+              </div> 
+
+
+               <div class="row">
+                    
+                    <div class="col-md-4 col-sm-6">
+                         <!-- MENU THUMB -->
+
+                         <div class="menu-thumb">
+                              <a href="#" data-toggle="modal" data-target="#exampleModal">
+                                   <img src="https://www.yana.kiev.ua/img/hotels/268/big/491/1703776864.jpg" class="img-responsive" alt="">
+
+                                   <div class="menu-info">
+                                        <div class="menu-item">
+                                             <h3>Мексика</h3>
+                                             <p>Узнать подробнее</p>
+                                        </div>
+                                   </div>
+                              </a>
+                              
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <!-- MENU THUMB -->
+                         <div class="menu-thumb">
+                              <a href="#" data-toggle="modal" data-target="#exampleModal">
+                                   <img src="images/5.jpg"  class="img-responsive" alt="">
+
+                                   <div class="menu-info">
+                                        <div class="menu-item">
+                                             <h3>Прибалтика</h3>
+                                             <p>Узнать подробнее</p>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6">
+                         <!-- MENU THUMB -->
+                         <div class="menu-thumb">
+                              <a href="#" data-toggle="modal" data-target="#exampleModal">
+                                   <img src="https://im0-tub-ru.yandex.net/i?id=4a1576ecc93d31abd83364181bb73190&n=13&exp=1" class="img-responsive" alt="">
+
+                                   <div class="menu-info">
+                                        <div class="menu-item">
+                                             <h3>Бермуды</h3>
+                                             <p>Узнать подробнее</p>
+                                        </div>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+               </div>
+               
+
+</div></div></div>
+          </div>
+     </section>
+
+     <section id="" data-stellar-background-ratio="0.5">
+
+          <hr class="style-eight" style="margin-bottom:5rem; margin-top:-3rem;">
+
+     <div class="container ">
+          
+          <div class="row wow fadeInUp" >
+               <div class="col-md-6" >
+                         <video autoplay loop muted id="video-bg" style="width: 100%; border-radius: 6px;">
+                         <source src="images/2.mp4" type="video/mp4">
+                         </video>                
+               </div>
+
+               <div class="col-md-6" style="text-align: center; margin-top:-2rem;">
+                                   <h2 style="margin-bottom: -15px;">Заинтересовались?</h2>
+                                   <h5 style="margin-bottom: 20px;">Оставьте свой номер и мы вам обязательно перезвоним.</h5>
+
+                         <!-- CONTACT FORM -->
+                         <form action="add_client.php" method="POST">
+                              <div class="form-group">
+                                  <input type="text" class="form-control" style="height: 4.7rem; border-color:red" id="name" name="name"
+                                         placeholder="Введите Ваше имя" required>
+                              </div>
+                          
+                              <div class="form-group">
+                                  <input type="tel" class="form-control" style="height: 4.7rem; border-color: red; " id="phone" name="phone"
+                                         placeholder="+7 (495) 755 69 83" required>
+                              </div>
+                          
+                              <div style="color:rgb(128, 119, 119);font-size: 13px;">
+                                  Нажимая на кнопку, я согласен(а) с условиями
+                                  <br/>
+                                  <a href="#" style="text-decoration: none; color:rgb(61, 59, 59); font-size: 10px;">
+                                      Пользовательского соглашения, Клиентского соглашения и Terms and Conditions
+                                  </a>
+                              </div>
+                              <br/>
+                              <button type="submit" class="btn section1-btn btn-lg btn-block" style="height: 4.5rem;">Обратиться</button>
+                          </form>
+               </div>
+
+          </div>
+     </div>
+     <hr class="style-eight" style="margin-top:4rem;">
+</section>
+
+
+     <!-- FOOTER -->
+     <footer id="footer" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-3 col-sm-8">
+                         <div class="footer-info">
+                              <div class="section-title">
+                                   <h2 class="wow fadeInUp" data-wow-delay="0.2s">Find us</h2>
+                              </div>
+                              <address class="wow fadeInUp" data-wow-delay="0.4s">
+                                   <p>123 nulla a cursus rhoncus,<br> augue sem viverra 10870<br>id ultricies sapien</p>
+                              </address>
+                         </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-8">
+                         <div class="footer-info">
+                              <div class="section-title">
+                                   <h2 class="wow fadeInUp" data-wow-delay="0.2s">Reservation</h2>
+                              </div>
+                              <address class="wow fadeInUp" data-wow-delay="0.4s">
+                                   <p>090-080-0650 | 090-070-0430</p>
+                                   <p><a href="mailto:info@company.com">info@company.com</a></p>
+                                   <p>LINE: eatery247 </p>
+                              </address>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-8">
+                         <div class="footer-info footer-open-hour">
+                              <div class="section-title">
+                                   <h2 class="wow fadeInUp" data-wow-delay="0.2s">Open Hours</h2>
+                              </div>
+                              <div class="wow fadeInUp" data-wow-delay="0.4s">
+                                   <p>Monday: Closed</p>
+                                   <div>
+                                        <strong>Tuesday to Friday</strong>
+                                        <p>7:00 AM - 9:00 PM</p>
+                                   </div>
+                                   <div>
+                                        <strong>Saturday - Sunday</strong>
+                                        <p>11:00 AM - 10:00 PM</p>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-2 col-sm-4">
+                         <ul class="wow fadeInUp social-icon" data-wow-delay="0.4s">
+                              <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                              <li><a href="#" class="fa fa-twitter"></a></li>
+                              <li><a href="#" class="fa fa-instagram"></a></li>
+                              <li><a href="#" class="fa fa-google"></a></li>
+                         </ul>
+
+                         <div class="wow fadeInUp copyright-text" data-wow-delay="0.8s"> 
+                              <p><br>Copyright &copy; 2020 <br> SMART . CRUIS
+                              
+                              <br><br>Design: <a rel="nofollow"  target="_parent">MaxLestor</a></p>
+                         </div>
+                    </div> 
+
+               </div>
+          </div>
+     </footer>
+
+
+     <!-- SCRIPTS -->
+     <script src="js/jquery.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/jquery.stellar.min.js"></script>
+     <script src="js/wow.min.js"></script>
+     <script src="js/owl.carousel.min.js"></script>
+     <script src="js/jquery.magnific-popup.min.js"></script>
+     <script src="js/smoothscroll.js"></script>
+     <script src="js/custom.js"></script>
+
+</body>
+</html>
